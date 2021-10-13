@@ -1,0 +1,22 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    margin: 12px;
+    color: antiquewhite;
+}
+#btn{
+    background-color: rgb(136, 70, 70);
+    color: white;
+    border: 2px solid black;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-radius: 12px;
+    padding: 12px;
+}

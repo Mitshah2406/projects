@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+       <div class="heading">
+           <h1 class="h-txt">Loan Calculator</h1>
+       </div>
+       <form action="">
+       <div class="loanDiv">
+           <span class="rupeeIcon">₹</span>
+           <label for="amount"></label>
+           <input type="text" name="amount" id="amount" placeholder="Enter The Amount">
+       </div>
+       <div class="interestDiv">
+           <span class="percentIcon">%</span>
+           <label for="interest"></label>
+           <input type="text" name="interest" id="interest" placeholder="Enter The Rate OF Interest">
+       </div>
+       <div class="loanDiv">
+           <label for="years"></label>
+           <input type="text" name="years" id="years" placeholder="Enter The Number Of Years">
+       </div>
+       <div class="calculateBtn">
+           <button  id="calculateBtn">Calculate</button>
+       </div>
+    </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
