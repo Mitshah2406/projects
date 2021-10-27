@@ -1,0 +1,23 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body[data-theme="light"] {
+    --color-1: rgb(196, 220, 241);
+    --color-2: white;
+}
+
+body[data-theme="dark"] {
+    --color-1: #1e1f26;
+    --color-2: #292c33;
+}
+
+.container {
+    width: 400px;
+    height: 50%;
+    border: 1px solid var(--color-1);
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding:12px;
+    border-radius:9px;
+}

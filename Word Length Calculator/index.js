@@ -1,4 +1,6 @@
 countBtn.addEventListener('click', () => {
+  let music =new Audio('click.mp3');
+  music.play()
     let withWhitespaces = document.getElementById('withWhitespaces');
     let withoutWhitespaces = document.getElementById('withoutWhitespaces');
     let textarea = document.getElementById('textarea').value;
@@ -28,7 +30,8 @@ countBtn.addEventListener('click', () => {
 
         }
         else if (withoutWhitespaces.checked) {
-            removeSpace = textarea.replace(/\s+/g, '');
+          let regex =/ /g;
+            removeSpace = textarea.replace(regex,'');
             lengthWithoutSpaces = removeSpace.length;
             console.log(lengthWithSpaces)
             html = `     <div class="row my-3">

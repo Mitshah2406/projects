@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipBoard Functionality</title>
+    <style>
+        #copyBtn {
+            padding: 8px;
+            border-radius: 8px;
+            background-color: #0D6EFD;
+            color: white;
+            font-size: 1.1rem;
+            position: relative;
+            margin: auto;
+            border: 2px solid #0D6EFD;
+            /* width: 10%; */
+        }
+
+        #copyBtn:active {
+            box-shadow: 0px 0px 1px 4px #a3c0ec;
+        }
+
+        #text {
+            padding: 5px;
+            margin: 12px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="text" id="text" placeholder="Hi" >
+    <button id="copyBtn" type="button" title="Copy To Clipboard">Copy</button>
+</body>
+<script>
+    document.getElementById("copyBtn").addEventListener('click', () => {
+        document.body.setAttribute("data-theme", "dark")
+        let txt = document.getElementById('text');
+        txt.select();
+        navigator.clipboard.writeText(txt.value);
+    })
+</script>
+
+</html>

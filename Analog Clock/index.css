@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient( to bottom, #2987e4 50%, #16191e 50%);
+}
+
+.clock {
+    height: 320px;
+    width: 320px;
+    background: #16191e;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    box-sizing: content-box;
+    border: 20px solid #242931;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.clock img{
+    position: relative;
+}
+.hand{
+    position: absolute;
+    background: #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transform-origin: bottom;
+    border-radius: 5px;
+}
+.hour{
+    height: 60px;
+    width: 10px;
+    top :100px;
+}
+.minute {
+    height: 80px;
+    width: 5px;
+    top: 80px;
+}
+.second {
+    height: 90px;
+    width: 3px;
+    top: 70px;
+    background-color: #2987e4;
+}
+
+/* ------------------------digital------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.digitalClockContainer{
+    font-family: 'Orbitron' ,sans-serif;
+    text-align: center;
+    color: #16191e;
+    font-size: 5.5rem;
+    height: 30vh;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+}
+.digitalClock{
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+}

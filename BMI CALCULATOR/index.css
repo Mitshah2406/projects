@@ -1,0 +1,83 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #40d8f1 50%, #090c31 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmiContainer {
+    background-color: #090c31;
+    border-radius:12px;
+    width: 40rem;
+    padding: 20px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 5, 24, 0.4);
+}
+
+.heading {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+}
+
+.inputContainer input {
+    padding: 12px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 2px solid #a39999;
+    width: 18rem;
+    color: #a39999;
+}
+
+.inputContainer input::placeholder {
+    color: #a39999;
+}
+
+#submit {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #3e676d;
+    color: white;
+    font-weight: 200;
+    background: #40d8f1;
+    box-shadow: 0px 0px 4px 4px #113136;
+}
+#submit:hover {
+    background-color: transparent;
+    color: #40d8f1;
+}
+.solutionContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: #40d8f1;
+    border-radius: 12px;
+    width: 25rem;
+    padding:12px;
+}
+.flexContainer{
+    display: flex;
+    justify-content: center;
+}
+.bmiOutput, .bmiRemark{
+    color: white;
+    padding: 4px
+
+}
