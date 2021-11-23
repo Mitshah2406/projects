@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.test-wrapper {
+    color: #34495e;
+    width: 600px;
+    background-color: #fff;
+    margin: 30px 0px;
+    border-radius: 10px;
+    border: 2px solid #bdc3c7;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.head-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 25px;
+    border-bottom: 2px solid #bdc3c7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px
+}
+
+.head-nav p span {
+    background-color: #00a8ff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 12px;
+}
+
+.sample-text {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #00a8ff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.text-wrapper {
+    padding: 15px 25px;
+    user-select: none;
+    font-size: 15px;
+}
+
+.typing-area {
+    padding: 8px 25px;
+}
+
+.typing-area textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.buttons {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    padding: 4px 18px;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    background-color: #00a8ff;
+    color: #fff;
+    font-size: 17px;
+}
+
+.buttons button:hover {
+    border-color: #00a8ff;
+    background-color: #fff;
+    color: #00a8ff;
+}
+
+.buttons button:active {
+    box-shadow: 1px 1px 0px 3px #74b9ff, -1px -1px 0px 3px #74b9ff;
+}

@@ -22,7 +22,10 @@ body{
 }
 
 /* ----------start button------------------------------------------------ */
-
+.startBtn{
+    
+    transform: scale(0);
+}
 .startBtn button{
     background: #fff;
     color : var(--blue-color);
@@ -33,6 +36,7 @@ body{
     width: 12rem;
     border-radius: 8px;
     cursor: pointer;
+    transform: scale(0);
 }
 
 /* ----------info-box------------------------------------------------
@@ -105,50 +109,41 @@ body{
 
 /* -----------quiz-box-------------------------------- */
 
-.quiz_box {
+.quiz_box{
+    transform: translate(-50%, -50%) scale(1);
+    text-align: left;
     background-color: #fff;
-    height: 30rem;
-    width: 35rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-between;
-}
-.quiz_box header{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 8px solid var(--blue-color);
-    }
-    .quiz_box header .title {
-        font-size: 1.4rem;
-        font-weight: 900;
-        text-shadow: 0px 0px 1px black;
-    }
-.timer{
-    display: flex;
-    flex-direction: row;
-    background: #cce5ff;
-    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border: none;
-    padding:6px;
-    width: 8rem;
-    box-shadow: 0px 0px 2px #cce5ff;
+    width: 35rem;
+    text-transform: capitalize;
+    border-radius: 8px;
 }
-.timer .time_left_txt{
-    color: white;
-    margin: 5px;
-    font-weight: 500;
+
+.quiz_box header{
+    display: flex;
+    justify-content: space-between;
+   color: #000;
+   font-size: 1.3rem;
+   font-weight: bold;
+   padding: 1rem;
 }
-.timer .timer_sec{
-   background: #343a40;
-   border: 1px solid #343a40;
-   color: #fff;
-   padding: 3px 5px;
-   margin: 1px;
-   border-radius: 5px;
-   box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+.quiz_box header .timer span:nth-child(1) {
+    background-color: #74b9ff;
+    color: #007bff;
+    border-radius: 8px;
+    padding: 8px 25px;
+    padding-right: 50px;
+}
+.timer{
+    position: relative;
+}
+.quiz_box header .timer span:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: -7px;
+    border-radius: 8px;
+    
+    background-color: #000;
+    color: #fff;
 }
